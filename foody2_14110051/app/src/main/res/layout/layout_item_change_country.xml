@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/bgr_color_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/viewChangeCountry"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@drawable/view_change_country_selector"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/vietnam"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textSize="@dimen/item_text_size"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_size" />
+        <TextView
+            android:textSize="@dimen/text_size_title"
+            android:text="@string/change_country"
+            android:gravity="center|right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_size" />
+    </LinearLayout>
+    <ImageView
+        android:layout_toLeftOf="@id/viewChangeCountry"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

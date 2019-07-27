@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_size">45dp</dimen>
+    <dimen name="header_size">35dp</dimen>
+    <dimen name="tabhost_size">42dp</dimen>
+    <dimen name="tab_layout_size">25dp</dimen>
+    <dimen name="tab_padding_text_3">3dp</dimen>
+    <dimen name="tab_padding_text">8dp</dimen>
+    <dimen name="tab_margin">0.5dp</dimen>
+    <dimen name="text_size_tab_header">13sp</dimen>
+    <dimen name="tab_max_width">60dp</dimen>
+    <dimen name="tab_corner_size">3dp</dimen>
+    <dimen name="tab_stroke_width">1dp</dimen>
+    <dimen name="size_logo_icon">20dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="item_margin_both_side">10dp</dimen>
+    <dimen name="item_text_size">12sp</dimen>
+    <dimen name="btn_cancel_size">40dp</dimen>
+    <dimen name="line_size">40dp</dimen>
+    <dimen name="text_size_title">11.0sp</dimen>
+    <dimen name="text_size_comment">9sp</dimen>
+    <dimen name="text_size_address">9sp</dimen>
+    <dimen name="search_size">40dp</dimen>
+    <dimen name="text_size_toolbar">15sp</dimen>
+    <dimen name="text_size_city">14sp</dimen>
+    <dimen name="spacingItem">6dp</dimen>
+    <dimen name="spacingMenu">10dp</dimen>
+    <dimen name="spacing">15dp</dimen>
+    <dimen name="iconsize">30dp</dimen>
+</resources>

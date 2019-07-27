@@ -1,0 +1,62 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/itemAddress"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imgStick"
+            android:visibility="invisible"
+            android:src="@drawable/stick_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_city"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_city"
+            android:layout_centerVertical="true"
+            android:textAllCaps="false"
+            android:text="Quận 1"
+            android:id="@+id/textViewCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textStyle="bold"
+            android:id="@+id/buttonCityDefault"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:background="@drawable/btn_selector"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            android:text="@string/city_default"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:layout_width="65dp"
+            android:layout_height="25dp" />
+        <ImageView
+            android:id="@+id/imgCateChecked"
+            android:src="@drawable/stick_icon"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_margin_both_side"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/itemAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_recyclerview"/>
+</RelativeLayout>

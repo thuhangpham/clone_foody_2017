@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thuhang.foody1703311.CategoriesActivity">
+   <include layout="@layout/layout_appbar"/>
+   <TextView
+       android:text="@string/discover"
+       android:textColor="@color/black"
+       android:layout_marginTop="50dp"
+       android:layout_marginBottom="20dp"
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerViewChangeCate"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <LinearLayout
+       android:id="@+id/viewOrderTable"
+       android:layout_marginTop="70dp"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+         <TextView
+            android:text="@string/order"
+            android:id="@+id/dc"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal"
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/delivery"
+                android:src="@drawable/delivery"
+                android:layout_width="120dp"
+                android:scaleType="centerCrop"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:text="Đặt giao hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_marginLeft="40dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="120dp"
+                android:scaleType="centerCrop"
+                android:layout_height="50dp"
+                android:id="@+id/table"
+                android:src="@drawable/tablenow" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:text="@string/reservations"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+         </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

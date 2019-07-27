@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners
+                android:bottomRightRadius="@dimen/tab_corner_size"
+                android:topRightRadius="@dimen/tab_corner_size"/>
+            <stroke android:color="@color/white"
+                android:width="@dimen/tab_stroke_width"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/colorPrimary"/>
+            <corners
+                android:bottomRightRadius="@dimen/tab_corner_size"
+                android:topRightRadius="@dimen/tab_corner_size"/>
+            <stroke android:color="@color/white"
+                android:width="@dimen/tab_stroke_width"/>
+        </shape>
+    </item>
+</selector>

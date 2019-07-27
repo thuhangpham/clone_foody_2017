@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.thuhang.foody1703311.RegisterActivity">
+   <include layout="@layout/layout_appbar_tran"/>
+    <RelativeLayout
+        android:layout_below="@+id/appbar_layout"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <EditText
+            android:id="@+id/editEMAIL"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/border_white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="15sp" />
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="5dp"
+            android:id="@+id/editTextPASSWORD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editEMAIL"
+            android:background="@drawable/border_white"
+            android:hint="Mật khẩu"
+            android:lines="1"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="15sp" />
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp"
+            android:id="@+id/editTextCONFIRMPASSWORD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPASSWORD"
+            android:background="@drawable/border_white"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorEditText"
+            android:lines="1"
+            android:maxLength="20"
+            android:textSize="15sp" />
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp"
+            android:id="@+id/editTextUSERNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCONFIRMPASSWORD"
+            android:background="@drawable/border_white"
+            android:hint="Tên hiển thị"
+            android:lines="1"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUSERNAME"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white_2"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/login_byemail_forgetpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_register"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Mật khẩu phải có ít nhất là 4 kí tự."
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_login"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite_Transparent"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

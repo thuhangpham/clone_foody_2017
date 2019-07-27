@@ -1,0 +1,31 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_uber_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_size"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="@string/search_hint"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:textSize="@dimen/text_size_title"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_recyclerview"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/item_city_main"/>
+   <!-- <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewTab3"
+        android:layout_below="@id/viewChangeCity"
+        android:background="@color/theme_light_grey"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>-->
+    <ExpandableListView
+        android:groupIndicator="@null"
+        android:layout_below="@id/viewChangeCity"
+        android:background="@color/theme_light_grey"
+        android:id="@+id/lvTab3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ExpandableListView>
+    <Button
+        android:background="@color/white"
+        android:id="@+id/btnCancelAction3"
+        android:textAllCaps="false"
+        android:layout_above="@id/lvTab3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:text="@string/cancel_action"
+        android:layout_height="@dimen/btn_cancel_size" />
+</RelativeLayout>

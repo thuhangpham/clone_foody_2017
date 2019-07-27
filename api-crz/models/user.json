@@ -1,0 +1,15 @@
+{
+    "id":"",
+    "username":"",
+    "firstname":"",
+    "lastname":"",
+    "dob":"",
+    "password":"",
+    "email":"",
+    "url":"",
+    "imageURL":"",
+    "gender":"",
+    "phone":"",
+    "relationship":"",
+    "created_at":""
+}

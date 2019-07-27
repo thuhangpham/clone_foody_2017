@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:id="@+id/btnTabHeader"
+    android:textAllCaps="false"
+    android:layout_width="wrap_content"
+    android:textColor="@color/text_color"
+    android:layout_height="@dimen/header_size"
+    android:paddingBottom="1dp"
+    android:background="@drawable/header_places_selector"
+    android:text="@string/latest"
+    android:drawableBottom="@drawable/ic_expand_more_black_24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

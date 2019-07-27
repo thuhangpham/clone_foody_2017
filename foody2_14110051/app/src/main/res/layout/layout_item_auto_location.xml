@@ -1,0 +1,24 @@
+<RelativeLayout
+    android:id="@+id/viewAutoLocation"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:text="@string/auto_location"
+        android:gravity="center"
+        android:textSize="@dimen/item_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/search_size" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/perm_group_location"/>
+</RelativeLayout>

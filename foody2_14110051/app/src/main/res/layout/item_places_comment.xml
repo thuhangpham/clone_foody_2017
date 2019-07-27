@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_avatar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:text="thotnot"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/textViewUserName"
+            android:text="Tôi là gã cao bồi nghèo đơn độc, rong ruổi trên đường dài xa quê hương...  :-)"
+            android:layout_marginRight="25dp"
+            android:textSize="11sp"
+            android:textColor="@color/color_gray"
+            android:maxLines="2"
+            android:id="@+id/textViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="8.5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="11sp"
+            android:textColor="@color/green_color_avg_review"
+            android:id="@+id/textViewReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

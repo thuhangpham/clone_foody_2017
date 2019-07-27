@@ -1,0 +1,59 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/itemAddress"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/text_color_city"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:textAllCaps="false"
+            android:text="Quận 1"
+            android:id="@+id/textViewDistrictName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/duong"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:clickable="true"
+            android:background="@drawable/btn_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewTotalRoads"
+                android:textColor="@color/gray"
+                android:text="149 đường"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:paddingLeft="15dp"
+                android:layout_toRightOf="@id/textViewTotalRoads"
+                android:layout_centerVertical="true"
+                android:src="@drawable/vc_arrow_right"
+                android:id="@+id/imgInfo"
+                android:layout_height="24dp"
+                android:layout_width="24dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/itemAddress"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_recyclerview"/>
+</RelativeLayout>

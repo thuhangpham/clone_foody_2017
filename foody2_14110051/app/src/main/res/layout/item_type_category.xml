@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:id="@+id/itemTypeCate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgTypeCate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_margin_both_side"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:id="@+id/textViewNameTypeCate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_margin_both_side"
+        android:layout_toRightOf="@id/imgTypeCate"
+        android:textColor="@color/text_color"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/imgTypeCateChecked"
+        android:src="@drawable/stick_icon"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_margin_both_side"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+</RelativeLayout>
+    <View
+        android:layout_below="@id/itemTypeCate"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_recyclerview"/>
+</RelativeLayout>

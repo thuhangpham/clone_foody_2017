@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Luu lại"
+        android:id="@+id/mn_save"/>
+    <item android:title="Viết bình luận"
+        android:id="@+id/mn_comment"/>
+    <item android:title="Chia sẻ"
+        android:id="@+id/mn_share"/>
+    <item android:title="Báo lỗi"
+        android:id="@+id/mn_report"/>
+    <item android:title="Ẩn địa điểm"
+        android:id="@+id/mn_hide_place"/>
+    <item android:title="Hủy"
+        android:id="@+id/mn_cancel"/>
+</menu>

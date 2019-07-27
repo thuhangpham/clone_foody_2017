@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_light_grey">
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TabWidget
+                android:tabStripEnabled="false"
+                android:id="@android:id/tabs"
+                android:showDividers="none"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"/>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--Main content of PlacesFragment-->
+                <LinearLayout
+                    android:id="@+id/places_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/layout_food_content" />
+                </LinearLayout>
+                <!--header tab "Moi nhat"-->
+                <LinearLayout
+                    android:id="@+id/header_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/layout_cate"/>
+                </LinearLayout>
+                <!--header tab "Danh muc"-->
+                <LinearLayout
+                    android:id="@+id/header_type_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/layout_type_cate"/>
+                </LinearLayout>
+                <!--header tab "TP.HCH"-->
+                <LinearLayout
+                    android:id="@+id/header_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/layout_city"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <include layout="@layout/layout_load"/>
+</LinearLayout>

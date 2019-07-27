@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lstView1"
+        android:dividerHeight="1dp"
+        android:background="@color/theme_light_grey"
+        android:divider="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <Button
+        android:background="@color/white"
+        android:id="@+id/btnCancelAction1"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:text="@string/cancel_action"
+        android:layout_height="@dimen/btn_cancel_size" />
+</RelativeLayout>

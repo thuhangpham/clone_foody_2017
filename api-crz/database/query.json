@@ -1,0 +1,14 @@
+{
+    "getItem" : "select * from itemplace where cityid = coalesce(?, cityid) and CATETYPEID = coalesce(?, catetypeid) and CATEGORYID=  coalesce(?,categoryid) and typeid =  coalesce(?,typeid) and districtid =  coalesce(?,districtid)  and streetid =  coalesce(?,streetid) order by created desc  limit ?,15",
+    "getItemPlaceNearBy" : "select * from itemplace where address like CONCAT('%',?, '%') and CATETYPEID = coalesce(?, catetypeid) and CATEGORYID=  coalesce(?,categoryid) and typeid =  coalesce(?,typeid) and address like CONCAT('%',?, '%')  and address like CONCAT('%',?, '%') order by created desc  limit ?,13",
+    "saveItem" :"insert into itemplace(address,name,totalreviews,img,districtid,avgrating,categoryid,typeid,totalpictures,restaurantid,cityid,catetypeid,latitude,longitude,created,streetid) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+    "saveUser" : "insert into user(name,username,password,email,imageURL,gender,phone,created,firstname,lastname,url,dob,relationship) values(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+    "updateUser" : "update user set username=?, firstname=?,lastname=? where id = ?",
+    "getReviewByItem": "select * from review where itemid = ? limit 2",
+    "getUser"  : "select * from user limit 10",
+    "getUserById" :"select * from user where id =?",
+    "countUser" : "select id as c from user where email = ? and password=?",
+    "checkUser" :"select id as c from user where email = ?",
+    "updateLL": "update itemplace set latitude = ?, logitude =? where id =?",
+    "itemFood": "select * from itemfoods where cityid = coalesce(?, cityid) and CATETYPEID = coalesce(?, catetypeid) and CATEGORYID=  coalesce(?,categoryid) and typeid =  coalesce(?,typeid) and districtid =  coalesce(?,districtid)  and streetid =  coalesce(?,streetid) limit 15 offset ? "
+}

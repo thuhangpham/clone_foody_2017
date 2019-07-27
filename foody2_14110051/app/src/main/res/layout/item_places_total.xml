@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp"
+    android:id="@+id/viewReviews"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_home_review"
+        android:id="@+id/imgViewCommentTotal"/>
+    <TextView
+        android:text="51"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@id/imgViewCommentTotal"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotalComment"/>
+    <ImageView
+        android:layout_toRightOf="@id/textViewTotalComment"
+        android:layout_marginLeft="25dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_home_photo_video"
+        android:id="@+id/imgViewPhotoTotal"/>
+    <TextView
+        android:layout_toRightOf="@id/imgViewPhotoTotal"
+        android:layout_marginLeft="1dp"
+        android:text="6795"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotalPhoto"/>
+    <TextView
+        android:text="Đang mở cửa"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewState"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/bgr_restaurant_open"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+</RelativeLayout>
